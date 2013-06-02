@@ -13,6 +13,7 @@ body { margin: 0; }
 
 .title { font-size: 400%; }
 .subtitle { font-size: 200%; }
+.twitter-account { color: cyan; }
 
 #banner {
 	padding: 10px;
@@ -60,3 +61,11 @@ body { margin: 0; }
 	margin-top: 10px;
 	font-size: 100%;
 }
+
+.header {
+	font-family: 'Tulpen One', cursive;
+	text-align: center;
+}
+
+.header .hi { margin-top: 20px; font-size: 300%; }
+.header .lo { margin-top: 20px; font-size: 200%; color: #666666;}
