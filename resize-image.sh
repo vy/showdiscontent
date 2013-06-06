@@ -14,6 +14,7 @@ while read inpPath; do
     inpFileBase="${inpFile%.*}"
     outPath="$inpDir/$inpFileBase.$suffix.$inpFileExt"
     [ -e "$outPath" ] && continue
+    echo "$inpPath"
     dims=$(identify "$inpPath" | sed -r 's/^.* ([0-9]+)x([0-9]+) .*$/\1 \2/g')
     oldDimW=$(echo $dims | awk '{print $1}')
     oldDimH=$(echo $dims | awk '{print $2}')

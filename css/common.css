@@ -52,6 +52,8 @@ body { margin: 0; }
 	line-height: 100%;
 }
 
+.story .text ul li { line-height: 100%; }
+
 .quote {
 	color: #666666;
 }
