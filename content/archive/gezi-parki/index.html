@@ -1,0 +1,51 @@
+---
+title: Taksim Gezi Park Protests
+---
+
+<%= gezi_parki_header(nil, has_days=false) %>
+
+<%
+	def make_btn(day, date, img, href)
+		s = '<div class="text-center" style="display: inline-block; width: 81px">'
+		s += "<div class='day-title'><div class='hi'>#{day}</div></div>"
+		s += "<a href='#{href}'><img style='margin-top: 15px' src='img/btn-#{img}.jpg'></a>"
+		s += "<div class='day-title'><div class='lo' style='margin-top: 10px'>#{date}</div></div>"
+		s += "</div>"
+	end
+%>
+
+<div class="container">
+	<div class="row-fluid text-center">
+		<%=
+			s = ""
+			[
+				["27 May", "0527", "2013-05-27,28,29/"],
+				["28 May", "0528", "2013-05-27,28,29/"],
+				["29 May", "0529", "2013-05-27,28,29/"],
+				["30 May", "0530", "2013-05-30/"],
+				["31 May", "0531", "2013-05-31/"],
+				["1 June", "0601", "2013-06-01/"],
+				["2 June", "0602", "2013-06-02/"],
+				["3 June", "0603", "2013-06-03/"],
+				["4 June", "0604", "2013-06-04/"],
+				["5 June", "0605", "2013-06-05/"],
+				["6 June", "0606", "2013-06-06/"],
+				["7 June", "0607", "2013-06-07/"],
+				["8 June", "0608", "2013-06-08/"]
+			].each_with_index { |entry, idx|
+				date, img, href = entry
+				s += make_btn(idx+1, date, img, href)
+			}
+			s
+		%>
+	</div>
+</div>
+
+<div class="entrance">
+	<div class="text-center">
+		<iframe width="853" height="480" src="http://www.youtube.com/embed/7ZgkTV9bUhE" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="summary">
+		Protests have been held in Turkey since 28 May 2013, dubbed the Turkish Spring by some media. The initial protests in Istanbul were led by about 50 environmentalists, opposing the replacement of Taksim Gezi Park with a reconstruction of the historic Taksim Military Barracks (demolished in 1940) possibly housing a shopping mall. The protests developed into riots when a group occupying the park was attacked with tear gas and water cannons by police. The subjects of the protests have since broadened beyond the development of Taksim Gezi Park into wider anti-government demonstrations. The protests have also spread to other cities in Turkey, and protests have been seen in other countries with significant Turkish communities, including the European countries, the U.S. and the far-east Asia. Prime Minister Recep Tayyip Erdoğan gave a number of speeches widely seen as inflammatory and dismissive of the protesters, and on 3 June left the country on a planned 3-day diplomatic tour of North African countries, a move that was criticized as irresponsible by opposing political leaders. On 3 June unions announced strikes for 4 and 5 June. <a href="https://en.wikipedia.org/w/index.php?title=2013_protests_in_Turkey">Continues...</a>
+	</div>
+</div>

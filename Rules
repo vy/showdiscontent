@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+
+compile %r{^/css} do
+  filter :erb
+  filter :sass if item[:extension] == "sass"
+end
+
+# Avoid applying the default layout to /index.html content. 
+compile "/" do
+  filter :erb
+end
+
+compile "*" do
+  unless item.binary?
+    filter :erb
+    filter :kramdown if item[:extension] == "md"
+    layout "default"
+  end
+end
+
+route %r{^/css} do
+  ext = item[:extension]
+  ext = "css" if item[:extension] == "sass"
+  item.identifier.chop + "." + ext
+end
+
+route "*" do
+  if item.binary?
+    item.identifier.chop + "." + item[:extension]
+  else
+    item.identifier + "index.html"
+  end
+end
+
+layout "*", :erb
