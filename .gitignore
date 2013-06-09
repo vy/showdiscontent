@@ -1,1 +1,4 @@
-img/.directory
+tmp
+output
+.sass-cache
+crash.log
