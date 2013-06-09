@@ -1,0 +1,76 @@
+@import url("http://fonts.googleapis.com/css?family=Tulpen+One");
+@import url("http://fonts.googleapis.com/css?family=Chau+Philomene+One");
+body {
+  margin: 0; }
+
+#header {
+  background-color: black;
+  color: #efefef;
+  font-family: "Tulpen One", cursive;
+  padding: 20px;
+  padding-top: 30px; }
+  #header .title {
+    font-size: 400%; }
+    #header .title a {
+      color: white; }
+  #header .subtitle {
+    font-size: 200%; }
+  #header .twitter-account {
+    color: cyan; }
+  #header .day-links {
+    font-size: 400%; }
+    #header .day-links a.hi {
+      color: cyan; }
+    #header .day-links a.lo {
+      color: #efefef; }
+
+.entrance {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: black; }
+  .entrance .summary {
+    color: #efefef;
+    width: 823px;
+    margin-top: 20px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto; }
+
+.story {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  vertical-align: top; }
+  .story img {
+    max-width: 100%;
+    display: block; }
+  .story .text {
+    margin-top: 5px;
+    font-size: 80%;
+    line-height: 100%; }
+    .story .text ul li {
+      line-height: 100%; }
+
+.info {
+  line-height: 150%;
+  text-align: right;
+  font-size: 12px; }
+
+.quote {
+  color: #666666; }
+  .quote .text {
+    font-size: 200%; }
+  .quote .author {
+    margin-top: 10px;
+    font-size: 100%; }
+
+.day-title {
+  font-family: "Tulpen One", cursive;
+  text-align: center; }
+  .day-title .hi {
+    margin-top: 20px;
+    font-size: 300%; }
+  .day-title .lo {
+    margin-top: 20px;
+    font-size: 200%;
+    color: #666666; }
