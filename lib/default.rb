@@ -26,7 +26,9 @@ def gezi_parki_header(target_url, has_days=true)
 	  		"2013-06-08/",
 	  		"2013-06-09/",
 	  		"2013-06-10/",
-	  		"2013-06-11/"
+	  		"2013-06-11/",
+	  		"2013-06-12/",
+	  		"2013-06-13/"
 	  	].each_with_index { |url, idx|
 	  		base_url = url.sub(/\/.*$/, "/")
 	  		active = (base_url == target_url) ? "hi" : "lo"
