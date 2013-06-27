@@ -47,13 +47,15 @@ body {
   display: inline-block;
   width: 30%;
   padding: 10px;
-  vertical-align: top; }
+  vertical-align: top;
+  line-height: 150%;
+  font-size: 12px; }
   .story img {
     max-width: 100%;
     display: block; }
   .story .text {
     margin-top: 5px;
-    font-size: 80%;
+    font-size: 90%;
     line-height: 100%; }
     .story .text ul li {
       line-height: 100%; }
